@@ -2,6 +2,7 @@ package leetcode;
 
 public class Solution_23 {
 	public ListNode mergeKList(ListNode[] lists){
+		if(lists.length==0) return null;
 		return partition(lists,0,lists.length-1);
 	}
 	public ListNode partition(ListNode[] list,int str,int end){
