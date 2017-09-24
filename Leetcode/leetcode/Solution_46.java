@@ -16,7 +16,7 @@ public void get(List<List<Integer>> list,List<Integer> temp,int[] nums,int start
 	if(temp.size()==nums.length) list.add(new ArrayList<>(temp));
 	else for (int i = start; i < nums.length; i++) {
 		swap(nums, start, i);
-		temp.add(nums[i]);
+		temp.add(nums[start]);
 		get(list, temp, nums, start+1);
 		temp.remove(temp.size()-1);
 		swap(nums, start, i);
