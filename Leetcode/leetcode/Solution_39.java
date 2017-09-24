@@ -17,7 +17,7 @@ public void get(List<List<Integer>> list,List<Integer> temp,int[] nums,int remai
 	else if(remain==0) list.add(new ArrayList<>(temp));
 	else for (int j = start; j < nums.length; j++) {
 		temp.add(nums[j]);
-		get(list, temp, nums, remain-nums[j], start);
+		get(list, temp, nums, remain-nums[j], j);//起始位置确定，j
 		temp.remove(temp.size()-1);
 	}
 }
