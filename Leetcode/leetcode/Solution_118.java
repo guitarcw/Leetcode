@@ -14,7 +14,7 @@ public class Solution_118 {
 			for(int j=1;j<temp.size()-1;j++) {
 				temp.set(j,temp.get(j)+temp.get(j+1));
 			}
-			result.add(temp);
+			result.add(new ArrayList<>(temp));
 		}
 		return result;
 	}
