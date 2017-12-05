@@ -12,7 +12,7 @@ public class Solution_138 {
 		if(map.containsKey(head)) {
 			 return map.get(head);
 		}//most important 避免循环出现
-		RandomListNode temp=new RandomListNode(head.label);
+		RandomListNode temp=new RandomListNode(head.label);//相当于每个RandomlistNode只执行一次相应的赋值操作
 		map.put(head, temp);
 		temp.next=copyRandomList(head.next);
 		temp.random=copyRandomList(head.random);
