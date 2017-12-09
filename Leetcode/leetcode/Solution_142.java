@@ -5,14 +5,18 @@ public class Solution_142 {
 		if(head==null||head.next==null) return null;
 		ListNode one=head;
 		ListNode two=head;
+		boolean choose=false;
 		while(two.next!=null&&two.next.next!=null) {
 			one=one.next;
 			two=two.next.next;
-			if(one==two) break;
+			if(one==two) {
+				choose=true;
+				break;
+			}
 		}
-		if(one!=two ) return null;
+		if(!choose) return null;
 		one =head;
-		while(one!=head) {
+		while(one!=two) {
 			one=one.next;
 			two=two.next;
 		}
