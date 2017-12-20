@@ -29,11 +29,13 @@ public class test {
 //		int[][] k=new int[1][1];
 //		System.out.print(m);
 //		System.out.print(n);
-		String path="/...";
-		String[] index=path.split("/");
-		for (String str : index) {
-			System.out.print(str);
+		String path="  1";
+		String[] str=path.split("");
+		for (String string : str) {
+			System.out.println(string);
+			
 		}
+		
 		
 		
 
