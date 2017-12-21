@@ -1,7 +1,7 @@
 package leetcode;
 //162.Find Peak Element
 public class Solution_162 {
-	public int findPeakElement(int[] nums) {
+	public int findPeakElement(int[] nums) {//思想找到一个最大值
 		int start=0;
 		int end=nums.length-1;
 		while(start<end) {
