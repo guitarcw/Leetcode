@@ -29,13 +29,13 @@ public class test {
 //		int[][] k=new int[1][1];
 //		System.out.print(m);
 //		System.out.print(n);
-		String path="  1";
-		String[] str=path.split("");
+		String path="1.12";
+		String[] str=path.split("[.]");
 		for (String string : str) {
 			System.out.println(string);
 			
 		}
-		
+		System.out.println(Integer.parseInt("01"));
 		
 		
 
