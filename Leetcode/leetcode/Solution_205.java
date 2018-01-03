@@ -16,6 +16,7 @@ public class Solution_205 {
 		}
 		return true;
 	}
+//≤‚ ‘
 	public static void main(String[] args) {
 		boolean k=isIsomorphic("egg", "add");
 		System.out.println(k);
